@@ -1,0 +1,93 @@
+*{
+    font-family: "poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --clr: #ff0ad6;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(loginRegTH.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+form{
+    background-color: rgba(8, 8, 8, 0.616);
+    padding: 60px 80px 60px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+form h1{
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 1.25cm;
+    letter-spacing: 0.1cm;
+    margin-bottom: 50px;
+}
+.inputBox{
+    align-self: center;
+    position: relative;
+    width: 300px;
+    margin-bottom: 40px;
+}
+.inputBox input{
+    position: relative;
+    width: 100%;
+    padding: 10px 0;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none;
+    color: #fff;
+    font-size: 0.7cm;
+    text-transform: uppercase;
+}
+.inputBox label{
+    position: absolute;
+    left: 0;
+    padding: 30px 0;
+    pointer-events: none;
+    color: white;
+    text-transform: uppercase;
+}
+.inputBox label span{
+    position: relative;
+    display: inline-flex;
+    letter-spacing: 0.05em;
+    transition: 0.2s ease-in-out;
+}
+.inputBox input:focus ~ label span,
+.inputBox input:valid ~ label span{
+    color: var(--clr);
+    letter-spacing: 0.15em;
+    transform: translate(0px, -35px);
+}
+.inputBox input:focus,
+.inputBox input:valid{
+    border-bottom: 2px solid var(--clr);
+}
+.inputBox input[type="submit"]{
+    background-color: var(--clr);
+    border: none;
+    padding: 15px;
+    border-radius: 50px;
+    color: rgba(8, 8, 8, 0.616);
+    font-weight: 550;
+    font-size: 0.7cm;
+    text-transform: uppercase;
+    letter-spacing: 0.1cm;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.inputBox input[type="submit"]:hover{
+    letter-spacing: 0.35em;
+}
