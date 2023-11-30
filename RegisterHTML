@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Registration Page</title>
+        <link rel="stylesheet" type="text/css" href="register.css">
+    </head>
+    <body>
+        <form>
+            <h1> New Account?</h1>
+            <br><br>
+            <div class="inputBox">
+                <input type="text" required>
+                <label>USERNAME</label>
+            </div>
+            <div class="inputBox">
+                <input type="text" required>
+                <label>E-MAIL</label>
+            </div>
+            <div class="inputBox">
+                <input type="password" required>
+                <label>CREATE &nbsp PASSWORD</label>
+            </div>
+            <div class="inputBox">
+                <input type="password" required>
+                <label>CONFIRM &nbsp PASSWORD</label>
+            </div>
+            <br>
+            <div class="inputBox">
+                <input type="submit" value="Register">
+            </div>
+        </form>
+        <script>
+            let label = document.querySelectorAll("label").forEach(label => {
+                label.innerHTML = label.innerText.split("").map
+                ((letters, i) => `<span style="transition-delay:
+                ${i*50}ms">${letters}</span>`).join("");
+            });
+        </script>
+    </body>
+</html>
